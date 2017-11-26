@@ -5,4 +5,4 @@ Goal: Own all wrestling results
 - Give Coaches Statistical Analysis
 - Link to Fantasy wrestling
 
-"The Official Scorekeeper"
+Become "The Official Scorekeeper"
