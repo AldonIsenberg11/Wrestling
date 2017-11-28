@@ -1,13 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from './layout/pages/Home.vue'
-import AboutMe from './layout/pages/AboutMe.vue'
-import Education from './layout/pages/Education.vue'
-import WorkExperience from './layout/pages/WorkExperience.vue'
-import Wrestling from './layout/pages/Wrestling.vue'
-import Hobbies from './layout/pages/Hobbies.vue'
+import Teamview from './layout/pages/Teamview.vue'
 import Blog from './layout/pages/Blog.vue'
-import Login from './layout/pages/Login.vue'
+import SignUp from './layout/pages/SignUp.vue'
 import NotFound from './layout/pages/NotFound.vue'
 
 // const Category = () => System.import('./theme/Category.vue')
@@ -25,14 +21,9 @@ const router = new VueRouter({
   scrollBehavior: (to, from, savedPosition) => ({y: 0}),
   routes: [
     { path: '/', component: Home },
-    { path: '/aboutMe', component: AboutMe },
-    { path: '/education', component: Education },
-    { path: '/workExperience', component: WorkExperience },
-    { path: '/wrestling', component: Wrestling },
-    { path: '/hobbies', component: Hobbies },
+    { path: '/teamview', component: Teamview },
     { path: '/blog/', component: Blog },
-    { path: '/blog/:id', name: 'blog', component: Blog },
-    { path: '/login', component: Login },
+    { path: '/sign-up', component: SignUp },
     { path: '*', component: NotFound }
   ]
 })

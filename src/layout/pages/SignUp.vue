@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-	<h2>Login</h2>
+	<h2>Sign up</h2>
 	<div class="field is-horizontal">
 		<div class="field-label is-normal">
 		  <label class="label">Username</label>
@@ -9,7 +9,7 @@
 		  <div class="field">
 			<div class="control">
 			  <input class="input" type="text"
-			  placeholder="Your username">
+			  placeholder="Username">
 			</div>
 		  </div>
 		</div>
@@ -22,7 +22,7 @@
 		  <div class="field">
 			<div class="control">
 			  <input class="input" type="password"
-			  placeholder="Your password">
+			  placeholder="Password">
 			</div>
 		  </div>
 		</div>

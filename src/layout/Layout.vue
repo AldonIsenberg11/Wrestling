@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-login></app-login>
     <app-header></app-header>
     <section class="main-section section">
       <div class="container content">
@@ -11,10 +12,12 @@
 </template>
 
 <script>
+import AppLogin from './AppLogin.vue'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
 export default {
   components: {
+    'app-login': AppLogin,
     'app-header': AppHeader,
     'app-footer': AppFooter
   }
