@@ -2,9 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from './layout/pages/Home.vue'
 import Teamview from './layout/pages/Teamview.vue'
-import Events from './layout/pages/EventsDirector/EventsDirectorLayout.vue'
+import Events from './layout/pages/EventsDirector/EventLanding.vue'
 import Blog from './layout/pages/Blog.vue'
 import SignUp from './layout/pages/SignUp.vue'
+import NewMatch from './layout/pages/EventsDirector/NewMatch.vue'
 import NotFound from './layout/pages/NotFound.vue'
 
 // const Category = () => System.import('./theme/Category.vue')
@@ -26,6 +27,7 @@ const router = new VueRouter({
     { path: '/events', component: Events },
     { path: '/blog/', component: Blog },
     { path: '/sign-up', component: SignUp },
+    { path: '/new-match', component: NewMatch },
     { path: '*', component: NotFound }
   ]
 })
