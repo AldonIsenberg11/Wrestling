@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from './layout/pages/Home.vue'
-import Teamview from './layout/pages/Teamview.vue'
+import Home from './layout/Home.vue'
+import Teamview from './layout/teamManager/TeamLanding.vue'
 import Events from './layout/eventsDirector/EventLanding.vue'
 import Blog from './layout/blog/BlogLanding.vue'
-import SignUp from './layout/pages/SignUp.vue'
+import SignUp from './layout/SignUp.vue'
 import NewMatch from './layout/eventsDirector/NewMatch.vue'
-import NotFound from './layout/pages/NotFound.vue'
+import NotFound from './layout/NotFound.vue'
 
 // const Category = () => System.import('./theme/Category.vue')
 // const Login = () => System.import('./theme/Login.vue')
