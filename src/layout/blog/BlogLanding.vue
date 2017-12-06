@@ -7,7 +7,7 @@
 
 <script>
 import BlogHome from './BlogHome.vue'
-import BlogNavigation from './BlogNavigation.ve'
+import BlogNavigation from './BlogNavigation.vue'
 export default {
   components: {
     'Blog-Home': BlogHome,

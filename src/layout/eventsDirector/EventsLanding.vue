@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import EventNavigation from './EventsNavigation.vue'
+import EventsNavigation from './EventsNavigation.vue'
 import EventsHome from './EventsHome.vue'
 export default {
   components: {

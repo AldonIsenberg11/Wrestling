@@ -4,6 +4,7 @@ import Home from './layout/Home.vue'
 import Teamview from './layout/teamManager/TeamLanding.vue'
 import Events from './layout/eventsDirector/EventsLanding.vue'
 import Blog from './layout/blog/BlogLanding.vue'
+import Store from './layout/store/StoreLanding.vue'
 import SignUp from './layout/SignUp.vue'
 import NewMatch from './layout/eventsDirector/NewMatch.vue'
 import NotFound from './layout/NotFound.vue'
@@ -26,6 +27,7 @@ const router = new VueRouter({
     { path: '/teamview', component: Teamview },
     { path: '/events', component: Events },
     { path: '/blog/', component: Blog },
+    { path: '/store', component: Store },
     { path: '/sign-up', component: SignUp },
     { path: '/new-match', component: NewMatch },
     { path: '*', component: NotFound }

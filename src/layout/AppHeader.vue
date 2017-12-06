@@ -9,6 +9,7 @@
       <router-link class="nav-item is-tab" to="/blog">Blog</router-link>
       <router-link class="nav-item is-tab" to="/sign-up">Sign Up</router-link>
       <router-link class="nav-item is-tab" to="/new-match">New Match</router-link>
+      <router-link class="nav-item is-tab" to="/store">Store</router-link>
     </div>
   </nav>
 </template>
