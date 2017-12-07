@@ -1,10 +1,36 @@
-Goal: Own all youth wrestling results
+### Start Application:
+
+
+Localhost:3000 `npm start`
+
 ---
 
+### Mission Statement:
+---
+
+Goal: Own all youth wrestling results
+---
+#### Includes:
 - **Create Unified ELO Wrestling Rating**
 - Give Coaches Statistical Analysis
 - Handle weigh-ins & Referee selection
 - Focus on Fundraising ideas
+
+### Gameplan:
+
+#### Phase 1:
+- Start off with Team Management software, Focus on the typical Non-Profit "Youth 501(c)3, schools, etc."
+  - Give that away for free to gain customer base?
+
+#### Phase 2:
+
+- Start on Event Management Software
+- Begin with some fundraising events
+  - To start generating revenue
+- Then to Duals
+- Ending with Tournaments
+
+#### Related goals:
 
 Become "The Official Scorekeeper"
 
