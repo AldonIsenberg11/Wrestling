@@ -4,7 +4,7 @@
       General
     </p>
     <ul class="menu-list">
-      <li><a>Dashboard</a></li>
+      <li><a class="is-active">Dashboard</a></li>
       <li><a>Customers</a></li>
     </ul>
     <p class="menu-label">
@@ -13,11 +13,11 @@
     <ul class="menu-list">
       <li><a>Team Settings</a></li>
       <li>
-        <a class="is-active">Manage Your Team</a>
+        <a>Manage Your Team</a>
         <ul>
-          <li><a>Members</a></li>
-          <li><a>Plugins</a></li>
-          <li><a>Add a member</a></li>
+          <a>Members</a>
+          <a>Plugins</a>
+          <a>Add a member</a>
         </ul>
       </li>
       <li><a>Invitations</a></li>
