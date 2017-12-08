@@ -8,10 +8,10 @@
       <router-link class="nav-item is-tab" to="/teamview">
         <div class="dropdown is-hoverable">
           <div class="dropdown-trigger">
-              <span>TeamView</span>
-              <span class="icon is-small">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-              </span>
+            <span>TeamView</span>
+            <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
           </div>
           <div class="dropdown-menu" id="dropdown-menu4" role="menu">
             <div class="dropdown-content">
