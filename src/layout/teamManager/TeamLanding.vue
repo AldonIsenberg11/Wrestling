@@ -1,7 +1,13 @@
 <template>
   <div class="container">
-    <Team-Navigation></Team-Navigation>
-    <Team-Home></Team-Home>
+    <div class="columns">
+      <div class="column is-one-third">
+          <Team-Navigation></Team-Navigation>
+      </div>
+      <div class="column">
+        <Team-Home></Team-Home>
+      </div>
+    </div>
   </div>
 </template>
 
