@@ -1,12 +1,10 @@
 <template>
   <div class="container">
     <div class="columns">
-      <div class="column is-1">
+      <div class="column is-one-third">
         <Events-Navigation></Events-Navigation>
       </div>
-      <div class="column is-2">
-      </div>
-      <div class="column is-3">
+      <div class="column">
         <Events-Home></Events-Home>
       </div>
     </div>
