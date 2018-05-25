@@ -1,17 +1,17 @@
 import expect from 'expect';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import CourseForm from './CourseForm';
+import WrestlerForm from './WrestlerForm';
 
 function setup(saving) {
   let props = {
-    course: {}, saving: saving, errors: {},
+    wrestler: {}, saving: saving, errors: {},
     onSave: () => {},
     onChange: () => {}
   };
 
   let renderer = TestUtils.createRenderer();
-  renderer.render(<CourseForm {...props}/>);
+  renderer.render(<WrestlerForm {...props}/>);
   let output = renderer.getRenderOutput();
 
   return {
@@ -21,7 +21,7 @@ function setup(saving) {
   };
 }
 
-describe('CourseForm via React Test Utils', () => {
+describe('WrestlerForm via React Test Utils', () => {
   it('renders form and h1', () => {
     const { output } = setup();
     expect(output.type).toBe('form');
