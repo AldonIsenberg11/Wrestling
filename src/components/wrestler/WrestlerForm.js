@@ -2,21 +2,21 @@ import React from 'react';
 import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
 
-const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
+const WrestlerForm = ({wrestler, allAuthors, onSave, onChange, saving, errors}) => {
   return (
     <form>
-      <h1>Manage Course</h1>
+      <h1>Manage wrestler info</h1>
       <TextInput
-        name="title"
-        label="Title"
-        value={course.title}
+        name="email"
+        label="Email"
+        value={wrestler.email}
         onChange={onChange}
-        error={errors.title}/>
+        error={errors.email}/>
 
       <SelectInput
         name="authorId"
         label="Author"
-        value={course.authorId}
+        value={wrestler.authorId}
         defaultOption="Select Author"
         options={allAuthors}
         onChange={onChange} error={errors.authorId}/>
@@ -24,14 +24,14 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
       <TextInput
         name="category"
         label="Category"
-        value={course.category}
+        value={wrestler.category}
         onChange={onChange}
         error={errors.category}/>
 
       <TextInput
         name="length"
         label="Length"
-        value={course.length}
+        value={wrestler.length}
         onChange={onChange}
         error={errors.length}/>
 
@@ -45,8 +45,8 @@ const CourseForm = ({course, allAuthors, onSave, onChange, saving, errors}) => {
   );
 };
 
-CourseForm.propTypes = {
-  course: React.PropTypes.object.isRequired,
+WrestlerForm.propTypes = {
+  wrestler: React.PropTypes.object.isRequired,
   allAuthors: React.PropTypes.array,
   onSave: React.PropTypes.func.isRequired,
   onChange: React.PropTypes.func.isRequired,
@@ -54,4 +54,4 @@ CourseForm.propTypes = {
   errors: React.PropTypes.object
 };
 
-export default CourseForm;
+export default WrestlerForm;
