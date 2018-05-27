@@ -8,7 +8,7 @@ class AboutPage extends React.Component {
           About
         </h1>
         <p>
-          This application uses React, Redux, React Router and a variety of other helpful libraries.
+          WrestleDB plans to record all wrestling match data to ultimately build a generally accepted rating system.
         </p>
       </div>
     );
