@@ -3,46 +3,82 @@ import delay from './delay';
 // This file mocks a web API by working with the hard-coded data below.
 // It uses setTimeout to simulate the delay of an AJAX call.
 // All calls return promises.
-const wrestlers = [
-  {
-    id: "react-flux-building-applications",
-    email: "Building Applications in React and Flux",
-    watchHref: "http://www.pluralsight.com/courses/react-flux-building-applications",
-    authorId: "cory-house",
-    length: "5:08",
-    category: "JavaScript"
+const wrestlers = [{
+    usawId: "53409601",
+    email: "JohnnyAkin@test.com",
+    firstName: "Johnny",
+    lastName: "Akin",
+    dob: "10/10/93",
+    phone: "913-555-1234",
+    gender: "male",
+    address1: "123 Test st.",
+    city: "Gardner",
+    state: "KS",
+    zip: "66030",
+    parentFirstName: "Eric",
+    parentLastName: "Akin",
+    parentEmail: "EricAkin@test.com"
   },
   {
-    id: "clean-code",
-    email: "Clean Code: Writing Code for Humans",
-    watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
-    authorId: "cory-house",
-    length: "3:10",
-    category: "Software Practices"
+    usawId: "10962601",
+    email: "AnthonyGaona@test.com",
+    firstName: "Anthony",
+    lastName: "Gaona",
+    dob: "07/10/97",
+    phone: "913-555-1254",
+    gender: "male",
+    address1: "123 Magic ct.",
+    city: "Olathe",
+    state: "KS",
+    zip: "66062",
+    parentFirstName: "Jorge",
+    parentLastName: "Gaona",
+    parentEmail: "JorgGaonae@test.com",
+    parent2FirstName: "Anthonys",
+    parent2LastName: "Mom",
+    parent2Email: "AnthonysMom@test.com"
   },
   {
-    id: "architecture",
-    email: "Architecting Applications for the Real World",
-    watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
-    authorId: "cory-house",
-    length: "2:52",
-    category: "Software Architecture"
+    usawId: "49833301",
+    email: "PeytonReeves@test.com",
+    firstName: "Peyton",
+    lastName: "Reeves",
+    dob: "1/12/94",
+    phone: "913-555-6234",
+    gender: "male",
+    address1: "55456 Test ter.",
+    city: "Overland Park",
+    state: "KS",
+    zip: "66212",
+    parentFirstName: "Daddy",
+    parentLastName: "Reeves",
+    parentEmail: "DaddyReeves@test.com"
   },
   {
-    id: "career-reboot-for-developer-mind",
-    email: "Becoming an Outlier: Reprogramming the Developer Mind",
-    watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
-    authorId: "cory-house",
-    length: "2:30",
-    category: "Career"
+    usawId: "11221401",
+    email: "BretMinor@test.com",
+    firstName: "Bret",
+    lastName: "Minor",
+    dob: "10/10/96",
+    phone: "913-555-1774",
+    gender: "male",
+    address1: "6659 Test st.",
+    city: "Gardner",
+    state: "KS",
+    zip: "66030"
   },
   {
-    id: "web-components-shadow-dom",
-    email: "Web Component Fundamentals",
-    watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
-    authorId: "cory-house",
-    length: "5:10",
-    category: "HTML5"
+    usawId: "21268601",
+    email: "JaredSimma@test.com",
+    firstName: "Jared",
+    lastName: "Simma",
+    dob: "05/07/98",
+    phone: "913-555-9876",
+    gender: "male",
+    address1: "123 STA Boulevard st.",
+    city: "Olathe",
+    state: "KS",
+    zip: "66062"
   }
 ];
 

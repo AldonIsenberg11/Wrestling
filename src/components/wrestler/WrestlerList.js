@@ -6,16 +6,17 @@ const WrestlerList = ({wrestlers}) => {
     <table className="table">
       <thead>
       <tr>
-        <th>&nbsp;</th>
+        <th>usawId</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Gender</th>
+        <th>D.O.B.</th>
         <th>Email</th>
-        <th>Author</th>
-        <th>Category</th>
-        <th>Length</th>
       </tr>
       </thead>
       <tbody>
       {wrestlers.map(wrestler =>
-        <WrestlerListRow key={wrestler.id} wrestler= {wrestler}/>
+        <WrestlerListRow key={wrestler.usawId} wrestler= {wrestler}/>
       )}
       </tbody>
     </table>

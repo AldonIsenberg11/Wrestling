@@ -15,7 +15,7 @@ export default function wrestlerReducer(state = initialState.wrestlers, action) 
 
     case types.UPDATE_WRESTLER_SUCCESS:
       return [
-        ...state.filter(wrestler => wrestler.id !== action.wrestler.id),
+        ...state.filter(wrestler => wrestler.usawId !== action.wrestler.usawId),
         Object.assign({}, action.wrestler)
       ];
 

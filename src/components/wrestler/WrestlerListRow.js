@@ -4,11 +4,12 @@ import {Link} from 'react-router';
 const WrestlerListRow = ({wrestler}) => {
   return (
     <tr>
-      <td><a href={wrestler.watchHref} target="_blank">Watch</a></td>
-      <td><Link to={'/wrestler/' + wrestler.id}>{wrestler.email}</Link></td>
-      <td>{wrestler.authorId}</td>
-      <td>{wrestler.category}</td>
-      <td>{wrestler.length}</td>
+      <td>{wrestler.usawId}</td>
+      <td>{wrestler.firstName + " " + wrestler.lastName}</td>
+      <td>{wrestler.city + " " + wrestler.state + ", " + wrestler.zip}</td>
+      <td>{wrestler.gender}</td>
+      <td>{wrestler.dob}</td>
+      <td><Link to={'/wrestler/' + wrestler.usawId}>{wrestler.email}</Link></td>
     </tr>
   );
 };

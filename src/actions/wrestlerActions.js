@@ -31,7 +31,7 @@ export function saveWrestler(wrestler) {
     dispatch(beginAjaxCall());
 
     return wrestlerApi.saveWrestler(wrestler).then(savedWrestler => {
-      wrestler.id ? dispatch(updateWrestlerSuccess(savedWrestler)) :
+      wrestler.usawId ? dispatch(updateWrestlerSuccess(savedWrestler)) :
         dispatch(createWrestlerSuccess(savedWrestler));
     }).catch(error => {
       dispatch(ajaxCallError(error));
