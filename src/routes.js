@@ -11,7 +11,7 @@ export default (
     <IndexRoute component= {HomePage} />
     <Route path="wrestlers" component={WrestlersPage} />
     <Route path="wrestler" component={ManageWrestlerPage} />
-    <Route path="wrestler/:id" component={ManageWrestlerPage} />
+    <Route path="wrestler/:usawId" component={ManageWrestlerPage} />
     <Route path="about" component={AboutPage} />
   </Route>
 );

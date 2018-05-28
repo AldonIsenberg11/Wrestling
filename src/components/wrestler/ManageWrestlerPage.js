@@ -21,7 +21,7 @@ export class ManageWrestlerPage extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.wrestler.id != nextProps.wrestler.id) {
+    if (this.props.wrestler.usawId != nextProps.wrestler.usawId) {
       this.setState({wrestler: Object.assign({}, nextProps.wrestler)});
     }
   }
@@ -93,21 +93,33 @@ ManageWrestlerPage.contextTypes = {
 };
 
 function getWrestlerById(wrestlers, id) {
-  const wrestler = wrestlers.filter(wrestler => wrestler.id ==id);
+  const wrestler = wrestlers.filter(wrestler => wrestler.usawId ==id);
   if (wrestler.length) return wrestler[0];
   return null;
 }
 
 function mapStateToProps(state, ownProps) {
-  const wrestlerId = ownProps.params.id; // from the path `/wrestler/:id`
+  const wrestlerId = ownProps.params.usawId; // from the path `/wrestler/:id`
 
   let wrestler = {
-    id        : '',
-    watchHref : '',
-    email     : '',
-    authorId  : '',
-    length    : '',
-    category  : ''
+    usawId           : '',
+    email            : '',
+    firstName        : '',
+    lastName         : '',
+    dob              : '',
+    phone            : '',
+    gender           : '',
+    address1         : '',
+    address2         : '',
+    city             : '',
+    state            : '',
+    zip              : '',
+    parentFirstName  : '',
+    parentLastName   : '',
+    parentEmail      : '',
+    parent2FirstName : '',
+    parent2LastName  : '',
+    parent2Email     : ''
   };
 
   if (wrestlerId && state.wrestlers.length > 0) {

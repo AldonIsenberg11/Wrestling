@@ -27,18 +27,18 @@ describe('Wrestler Reducer', () => {
   it('should update wrestler when passed UPDATE_WRESTLER_SUCCESS',() => {
     //arrange
     const initialState = [
-      {id: 'A', email: 'A'},
-      {id: 'B', email: 'B'},
-      {id: 'C', email: 'C'}
+      {usawId: 'A', email: 'A'},
+      {usawId: 'B', email: 'B'},
+      {usawId: 'C', email: 'C'}
     ];
 
-    const wrestler = {id: 'B', email: 'New Email'};
+    const wrestler = {usawId: 'B', email: 'New Email'};
     const action = actions.updateWrestlerSuccess(wrestler);
 
     //act
     const newState = wrestlerReducer(initialState, action);
-    const updatedWrestler = newState.find(a => a.id == wrestler.id);
-    const untouchedWrestler = newState.find(a => a.id == 'A');
+    const updatedWrestler = newState.find(a => a.usawId == wrestler.usawId);
+    const untouchedWrestler = newState.find(a => a.usawId == 'A');
 
     //assert
     expect(updatedWrestler.email).toEqual('New Email');
